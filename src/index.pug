@@ -13,7 +13,7 @@ head
   .row.bg-primary.pl-5(style='height: 15rem')
     .col-5.d-flex.align-items-center
       a(href=invoiceUrl alt='verification url')
-        img(src='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + invoiceUrl style='width: 200px' alt='QR Code')
+        img(src='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + encodeURIComponent(invoiceUrl) style='width: 200px' alt='QR Code')
     .col-5.d-flex.align-items-center.justify-content-end
       h1.display-2.font-weight-bold INVOICE
   .row.bg-primary.pl-5
